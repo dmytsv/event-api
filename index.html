@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Events API</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
+    <style>
+      div.container.ui.outer {
+        padding-top: 20%;
+      }
+      div.container.ui.inner {
+        padding-top: 5%;
+        padding-bottom: 5%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ui container outer">
+      <div class="ui placeholder segment">
+        <div class="ui container inner">
+          <h2 class="ui header">
+            <i class="settings icon"></i>
+            <div class="content">
+              This is API for evens app.
+              <div class="sub header">Please use following routes:</div>
+            </div>
+          </h2>
+
+          <div class="ui list">
+            <div class="item">
+              <i class="cloud icon"></i>
+              <div class="content">
+                <div class="header">/api/events - GET</div>
+                <div class="description">Retriving all events from DB</div>
+              </div>
+            </div>
+
+            <div class="item">
+              <i class="cloud icon"></i>
+              <div class="content">
+                <div class="header">/api/events - POST</div>
+                <div class="description">Adding new event to DB</div>
+              </div>
+            </div>
+
+            <div class="item">
+              <i class="cloud icon"></i>
+              <div class="content">
+                <div class="header">/api/events/:id - GET</div>
+                <div class="description">Retriving event with specific ID</div>
+              </div>
+            </div>
+
+            <div class="item">
+              <i class="cloud icon"></i>
+              <div class="content">
+                <div class="header">/api/events/:id - PATCH</div>
+                <div class="description">Updating event with specific ID</div>
+              </div>
+            </div>
+
+            <div class="item">
+              <i class="cloud icon"></i>
+              <div class="content">
+                <div class="header">/api/events/:id - DELETE</div>
+                <div class="description">Removing event with specific ID</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
